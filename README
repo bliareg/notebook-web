@@ -2,4 +2,5 @@ Current Program is a simple web tool that allow you CRUD notes. Written in order
 PS. 100/100
 
 To start this app - you need set up mysql, execute dump.sql, and configure your mysql username
-and password in - applicataion.properties. Then compile and run project.*
+and password in - applicataion.properties. Then compile, run project and open in your browser address - localhost:8080/.
+
