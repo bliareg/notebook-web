@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="organizer">
+<head>
+    <title>Home</title>
+    <script src="../resources/angular.js"></script>
+    <script src="../js/controllers.js"></script>
+    <link rel="stylesheet" href="../css/app.css">
+    <meta charset="utf-8">
+</head>
+<body>
+
+<div class="userInfoContainer" align="center" ng-controller="userInfo">
+    <span id="userInfoLabel">{{user.name}}</span>
+    <button id="userInfoExitButton" ng-click="logout()">вийти</button>
+</div>
+
+
+<!--todo видалити всі внутрішні стилі-->
+<br>
+
+<div ng-controller="app" class="appContainer">
+
+
+    <!--todo реалізувати ulils панель-->
+    <div class="utilsPanelContainer">
+        <input id="searchField" type="text" placeholder="пошук" ng-model="searchQuery">
+        <button ng-click="saveNotes()" id="syncButton"><img src="../resources/images/synchronization.png" width="13"
+                                                            height="13"></button>
+
+        <select ng-model="orderItem" ng-options="item.id as item.title for item in orderItems"></select>
+        <button ng-click="noteService.createNote()" id="addButton">+</button>
+    </div>
+    <div class="stud"></div>
+
+
+    <div class="notesContainer">
+
+
+        <div ng-repeat="noteIt in notes | orderBy: orderItem | filter:searchQuery">
+
+            <div class="note">
+                <div class="header"><!--ng-model="note"-->
+
+                    <input class="headerField" ng-model="noteIt.header" spellcheck="false" value="{{noteIt.header}}">
+
+                    <div class="noteStud"></div>
+                    <div class="noteUtils">
+                        <button ng-click="removeNote(noteIt)" class="noteButton">x</button>
+                    </div>
+                </div>
+
+                <div class="stud" style="background-color: #e3e83b;"></div>
+                <textarea class="content" ng-model="noteIt.note" spellcheck="false">{{noteIt.note}}</textarea>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

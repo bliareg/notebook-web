@@ -1,0 +1,230 @@
+
+.appContainer {
+    width: 75%;
+
+}
+
+/*--------USER INFO--------*/
+.userInfoContainer {
+    width: 90px;
+    height: 60px;
+    background-color: white;
+    border: 4px solid #0c8dba;
+
+    padding: 5px;
+    position: relative;
+    float: right;
+    margin: 20px;
+}
+
+#userInfoExitButton {
+    align-content: center;
+    margin: 7px;
+}
+
+#userInfoLabel {
+    text-align: center;
+    font-size: medium;
+    margin: 7px;
+}
+
+/*--------------------------*/
+
+body {
+    background-color: #0ca3d2;
+    font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    color: #404040;
+
+}
+
+/*-----------APP-----------*/
+
+.appContainer {
+    width: 75%;
+    width: 950px;
+    /*height: 550px;*/
+    height: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border: 10px solid #0c9ccb;
+}
+
+/*розпірка*/
+.stud {
+    width: 100%;
+    height: 1px;
+    background-color: #aeafbe;;
+}
+
+/*контейнер для записок*/
+.notesContainer {
+    overflow-y: auto;
+    padding: 20px;
+    padding-left: 27px;
+    width: 100%;
+    /*position: static;*/
+}
+
+/*Панель інструментів*/
+.utilsPanelContainer {
+
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 40px;
+    /*padding: 2px;*/
+    margin: 0px auto;
+}
+
+#searchField {
+    margin:9px;
+}
+
+#addButton{
+    font-size:large;
+    margin:9px;
+    position: relative;
+    float: right;
+    border: none;
+    background-color: #e7e7e7;
+    width: 24px;
+    height: 24px;
+}
+
+#syncButton{
+
+    margin:9px;
+    position: relative;
+    float: right;
+    border: none;
+    background-color: #e7e7e7;
+    width: 24px;
+    height: 24px;
+}
+
+#addButton:hover{
+    background-color: #c4c4c4;
+}
+#addButton:active{
+    background-color: #e7e7e7;
+}
+
+#syncButton:hover{
+    background-color: #c4c4c4;
+}
+#syncButton:active{
+    background-color: #e7e7e7;
+}
+
+
+/*-------------------*/
+
+/*-----note-----*/
+.note {
+    width: 210px;
+    height: 210px;
+    background-color: #fff359;
+    border: 4px solid #e3e83b;
+    padding: 0;
+    margin-top: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    /*display: table-cell;*/
+    float:  left;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 30px;
+    background-color: #d2d0d1;
+    background-color: #fff359;
+
+}
+
+.headerField{
+    display: inline-block;
+    width: 83%;
+    height: 25px;
+    padding: 2px;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    font-size: large;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.headerField:focus{
+    border: transparent;
+}
+
+.noteStud{
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: #e3e83b;
+}
+
+.noteUtils{
+    position: relative;
+    float: right;
+    width: 10%;
+    padding: 4px
+
+}
+
+.noteButton{
+    background-color: transparent;
+    border: none;
+}
+
+.noteButton:hover{
+    background-color: #e8d848;
+    border: none;
+}
+
+.noteButton:active{
+    background-color: transparent;
+    border: none;
+}
+
+.content {
+    padding: 2px;
+    width: 98%;
+    height: 83%;
+    background-color: #eceaeb;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    text-decoration: none;
+}
+.content:focus{
+    border: transparent;
+}
+
+
+/*--------------*/
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d7d015;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff979;
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+    background-color: #d7d015;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+    background-color: black;
+}
+/*-------------------------*/
