@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.12, for Linux (x86_64)
 --
--- Host: localhost    Database: oganizer
+-- Host: localhost    Database: organizer
 -- ------------------------------------------------------
 -- Server version	5.7.12-0ubuntu1
 
