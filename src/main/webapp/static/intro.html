@@ -24,16 +24,16 @@
 -->
     <section ng-hide="!isLogin" class="container">
         <div class="login">
-            <h1>Реєстрація</h1>
-            <p><input type="text" ng-model="user.login" value="" placeholder="Логін"></p>
-            <p><input type="text" ng-model="user.name" value="" placeholder="І’мя"></p>
-            <p><input type="password" ng-model="user.password" value="" placeholder="Пароль"></p>
+            <h1>Sign up</h1>
+            <p><input type="text" ng-model="user.login" value="" placeholder="Login"></p>
+            <p><input type="text" ng-model="user.name" value="" placeholder="Name"></p>
+            <p><input type="password" ng-model="user.password" value="" placeholder="Password"></p>
             <p class="remember_me">
                 <label ng-click="isLogin = !isLogin">
                     Увійти
                 </label>
             </p>
-            <p class="submit"><input ng-click="registerUser()" type="submit" name="commit"  value="Надіслати"></p>
+            <p class="submit"><input ng-click="registerUser()" type="submit" name="commit"  value="Sign up"></p>
         </div>
     </section>
 
@@ -41,16 +41,16 @@
 
     <section ng-hide="isLogin" class="container">
         <div class="login">
-            <h1>Вхід</h1>
+            <h1>Log in</h1>
             <form method="post" action="/">
-                <p><input type="text" name="login" value="" placeholder="Логін"></p>
-                <p><input type="password" name="password" value="" placeholder="Пароль"></p>
+                <p><input type="text" name="login" value="" placeholder="Login"></p>
+                <p><input type="password" name="password" value="" placeholder="Password"></p>
                 <p class="remember_me">
                     <label ng-click="isLogin = !isLogin">
-                        Немає облікового запису
+                        Create an account?
                     </label>
                 </p>
-                <p class="submit"><input type="submit" name="commit" value="Увійти"></p>
+                <p class="submit"><input type="submit" name="commit" value="Log in"></p>
             </form>
         </div>
     </section>

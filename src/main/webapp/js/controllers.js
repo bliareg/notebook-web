@@ -175,8 +175,8 @@ var appController = function ($scope, $http) {
 
     var initialize = function () {
         $scope.orderItems = [
-            {id: '-createTime', title: 'Найновіші'},
-            {id: 'header', title: 'За алфавітом'}]
+            {id: '-createTime', title: 'Latest'},
+            {id: 'header', title: 'Alphabetical'}]
         $scope.orderItem = '-createTime';
     }
 
